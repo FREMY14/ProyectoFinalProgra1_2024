@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="521.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #cd1fef 0%, #0083f5 100%);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.mycompany.proyectofinal.ActualizarclienteporadminController">
+   <children>
+      <Text layoutX="248.0" layoutY="41.0" stroke="WHITE" strokeType="OUTSIDE" text="ACTUALIZAR CLIENTES">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="107.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buscar cliente">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Text>
+      <Button fx:id="buscar_cliente_actualizar" accessibleRole="IMAGE_VIEW" layoutX="452.0" layoutY="53.0" mnemonicParsing="false" onAction="#boton_buscar_cliente_actualizar" style="-fx-background-color: #000000;" text="Buscar" textFill="WHITE" />
+      <TextField fx:id="obtener_datos_cliente_actualizar" layoutX="208.0" layoutY="55.0" prefHeight="26.0" prefWidth="225.0" />
+      <RadioButton fx:id="buscar_cliente_por_nombre_actualizar" layoutX="265.0" layoutY="84.0" mnemonicParsing="false" onAction="#boton_buscar_cliente_por_nombre_actualizar" />
+      <RadioButton fx:id="buscar_cliente_por_DPI_actualizar" layoutX="352.0" layoutY="84.0" mnemonicParsing="false" onAction="#boton_buscar_cliente_por_DPI_actualizar" />
+      <Text layoutX="259.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nombre" />
+      <Text layoutX="347.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DPI" />
+      <TableView fx:id="mostrar_clientes_actualizar" layoutX="54.0" layoutY="120.0" prefHeight="108.0" prefWidth="528.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="DPI" />
+            <TableColumn prefWidth="115.0" text="Nombre" />
+            <TableColumn prefWidth="58.0" text="Apellido" />
+            <TableColumn prefWidth="94.0" text="Direccion" />
+            <TableColumn prefWidth="65.0" text="Telefono" />
+            <TableColumn prefWidth="120.0" text="Contraseña" />
+         </columns>
+      </TableView>
+      <Button fx:id="actualizar_datos_cliente" accessibleRole="IMAGE_VIEW" layoutX="225.0" layoutY="455.0" mnemonicParsing="false" onAction="#boton_actualizar_datos_cliente" style="-fx-background-color: #000000;" text="Actualizar" textFill="#fffefe" />
+      <Button fx:id="regresar_gestion_clientes_admin" layoutX="368.0" layoutY="455.0" mnemonicParsing="false" onAction="#boton_regresar_gestion_clientes_admin" text="Regresar" />
+      <Text layoutX="192.0" layoutY="255.0" stroke="WHITE" strokeType="OUTSIDE" text="DPI" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="152.0" layoutY="290.0" stroke="WHITE" strokeType="OUTSIDE" text="Nombre " textAlignment="RIGHT">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="152.0" layoutY="322.0" stroke="WHITE" strokeType="OUTSIDE" text="Apellido" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="141.0" layoutY="353.0" stroke="WHITE" strokeType="OUTSIDE" text="Direccion" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="142.0" layoutY="386.0" stroke="WHITE" strokeType="OUTSIDE" text="Telelfono" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="42.0" layoutY="417.0" stroke="WHITE" strokeType="OUTSIDE" text="Actualizar contraseña" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="obtener_DPI_actualizar" layoutX="238.0" layoutY="237.0" prefHeight="25.0" prefWidth="234.0" />
+      <TextField fx:id="obtener_nombre_actualizar" layoutX="238.0" layoutY="272.0" prefHeight="25.0" prefWidth="234.0" />
+      <TextField fx:id="obtener_apellido_actualizar" layoutX="238.0" layoutY="304.0" prefHeight="25.0" prefWidth="234.0" />
+      <TextField fx:id="obtener_direccion_actualizar" layoutX="238.0" layoutY="335.0" prefHeight="25.0" prefWidth="234.0" />
+      <TextField fx:id="obtener_telefono_actualizar" layoutX="238.0" layoutY="368.0" prefHeight="25.0" prefWidth="234.0" />
+      <TextField fx:id="obtener_contraseña_actualizar" layoutX="238.0" layoutY="399.0" prefHeight="25.0" prefWidth="234.0" />
+   </children>
+</AnchorPane>

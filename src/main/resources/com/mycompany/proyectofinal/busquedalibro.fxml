@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to right, #61edff 22%, #1fff44 46%, #002aff 97%);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectofinal.BusquedalibroController">
+   <children>
+      <Text layoutX="205.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BUSQUEDA DE LIBROS" textOrigin="TOP">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="95.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buscar libro">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="buscar_por_titulo" layoutX="242.0" layoutY="87.0" mnemonicParsing="false" onAction="#boton_buscar_por_titulo" />
+      <Text layoutX="242.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="titulo" />
+      <RadioButton fx:id="buscar_por_autor" layoutX="285.0" layoutY="87.0" mnemonicParsing="false" onAction="#boton_buscar_por_autor" />
+      <Text layoutX="284.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="autor" />
+      <RadioButton fx:id="buscar_por_ISBN" layoutX="329.0" layoutY="87.0" mnemonicParsing="false" onAction="#boton_buscar_por_ISBN" />
+      <Text layoutX="329.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN" />
+      <Button fx:id="buscar_libros" accessibleRole="IMAGE_VIEW" layoutX="429.0" layoutY="57.0" mnemonicParsing="false" onAction="#boton_buscar_libro" style="-fx-background-color: #000000;" text="Buscar" />
+      <TableView fx:id="tabla_muestra_resultados" layoutX="43.0" layoutY="144.0" prefHeight="163.0" prefWidth="528.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ISBN" />
+          <TableColumn prefWidth="115.0" text="Nombre Libro" />
+            <TableColumn prefWidth="58.0" text="Autor" />
+            <TableColumn prefWidth="94.0" text="Año de publicacion" />
+            <TableColumn prefWidth="65.0" text="Editorial" />
+            <TableColumn prefWidth="120.0" text="Cantidad Disponible" />
+        </columns>
+      </TableView>
+      <Button fx:id="prestar_libro" accessibleRole="IMAGE_VIEW" layoutX="257.0" layoutY="333.0" mnemonicParsing="false" onAction="#boton_prestar_libro" style="-fx-background-color: #000000;" text="Prestar libro" />
+      <TextField fx:id="obtener_datos_del_libro" layoutX="185.0" layoutY="59.0" prefHeight="26.0" prefWidth="225.0" />
+   </children>
+</AnchorPane>

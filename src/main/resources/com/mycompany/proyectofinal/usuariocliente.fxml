@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFD700;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectofinal.UsuarioclienteController">
+   <children>
+      <Text fill="#0a0a0a" layoutX="263.0" layoutY="28.0" stroke="#81ff0b" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeMiterLimit="5.0" strokeType="OUTSIDE" strokeWidth="2.0" text="CLIENTES" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#0a0a0a" layoutX="126.0" layoutY="60.0" stroke="#f8f8f8" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeMiterLimit="5.0" strokeType="OUTSIDE" strokeWidth="2.0" text="Usuario Cliente" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="obtenerusuariocliente" layoutX="258.0" layoutY="42.0" prefHeight="25.0" prefWidth="235.0" />
+      <Text fill="#0a0a0a" layoutX="126.0" layoutY="93.0" stroke="#f8f8f8" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeMiterLimit="5.0" strokeType="OUTSIDE" strokeWidth="2.0" text="contraseña" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="obtenercontraseñacliente" layoutX="257.0" layoutY="75.0" prefHeight="25.0" prefWidth="235.0" />
+      <Button fx:id="iniciarsesioncliente" layoutX="323.0" layoutY="114.0" mnemonicParsing="false" onAction="#botoniniciosesioncliente" style="-fx-background-color: #00BFFF;" text="Iniciar Sesion" />
+      <Text fill="#0a0a0a" layoutX="180.0" layoutY="174.0" stroke="#f8f8f8" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeMiterLimit="5.0" strokeType="OUTSIDE" strokeWidth="2.0" text="Nombre" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="obtener_nombre_cliente" layoutX="249.0" layoutY="156.0" prefHeight="25.0" prefWidth="235.0" />
+      <Text fill="#0a0a0a" layoutX="176.0" layoutY="210.0" stroke="#f8f8f8" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeMiterLimit="5.0" strokeType="OUTSIDE" strokeWidth="2.0" text="Apellido" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="obtener_apellido_cliente" layoutX="249.0" layoutY="190.0" prefHeight="25.0" prefWidth="235.0" />
+      <Text fill="#0a0a0a" layoutX="168.0" layoutY="242.0" stroke="#f8f8f8" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeMiterLimit="5.0" strokeType="OUTSIDE" strokeWidth="2.0" text="Dirección" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="obtener_direccion_cliente" layoutX="249.0" layoutY="225.0" prefHeight="25.0" prefWidth="235.0" />
+      <Text fill="#0a0a0a" layoutX="174.0" layoutY="278.0" stroke="#f8f8f8" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeMiterLimit="5.0" strokeType="OUTSIDE" strokeWidth="2.0" text="Telefono" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="obtener_telefono_cliente" layoutX="250.0" layoutY="260.0" prefHeight="25.0" prefWidth="235.0" />
+      <Text fill="#0a0a0a" layoutX="213.0" layoutY="313.0" stroke="#f8f8f8" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeMiterLimit="5.0" strokeType="OUTSIDE" strokeWidth="2.0" text="DPI" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="obtener_dpi_cliente" layoutX="250.0" layoutY="296.0" prefHeight="25.0" prefWidth="235.0" />
+      <Text fill="#0a0a0a" layoutX="116.0" layoutY="346.0" stroke="#f8f8f8" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeMiterLimit="5.0" strokeType="OUTSIDE" strokeWidth="2.0" text="Crear contraseña" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="obtener_contraseña_creada_cliente" layoutX="249.0" layoutY="330.0" prefHeight="25.0" prefWidth="235.0" />
+      <Button fx:id="registrar_nuevo_cliente" layoutX="336.0" layoutY="361.0" mnemonicParsing="false" onAction="#boton_registrar_nuevo_cliente" style="-fx-background-color: #00BFFF;" text="Registrarme" />
+   </children>
+</AnchorPane>
